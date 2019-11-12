@@ -12,6 +12,48 @@ body {
     padding-right: 15px;
 }
 
+.square {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    text-align: center;
+    color: purple;
+    vertical-align: middle;
+}
+
+.square2 {
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    text-align: center;
+    color: purple;
+    vertical-align: middle;
+    display: inline;
+}
+.square2:nth-child(2n) {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.row {
+    display: flex;
+}
+.row:nth-child(1) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.square:hover {
+    background-color: lightgrey;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
